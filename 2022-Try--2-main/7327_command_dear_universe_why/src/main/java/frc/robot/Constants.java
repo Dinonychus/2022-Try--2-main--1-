@@ -16,13 +16,22 @@ public final class Constants {
     public static final int northEast_ID = 1;
     public static final int southEast_ID = 3;
 
+    // Shooter Spark ID
+    public static final int shooter_ID = 6;
+
+    // Intake Spark
+    public static final int intake_ID = 4;
+
     public static final int driverController_ID = 0;
 
     public static final int mechanismController_ID = 1;
 
+    public final static int LEFT_STICK_X = 0;
     public final static int LEFT_STICK_Y = 1;
-
+    public final static int LEFT_TRIGGER = 2;
+    public final static int RIGHT_TRIGGER = 3;
     public final static int RIGHT_STICK_X = 4;
+    public final static int RIGHT_STICK_Y = 5;
 
 
 
