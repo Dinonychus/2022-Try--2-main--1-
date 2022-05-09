@@ -13,7 +13,7 @@ public class intakeSpin extends CommandBase {
   @SuppressWarnings({"PMD.intakeSubSystem", "PMD.SingularField"})
   private final intakeSubSystem intakeSubSystem;
 
-
+  
   public intakeSpin(intakeSubSystem intakeSubSystem) {
     this.intakeSubSystem = intakeSubSystem;
     addRequirements(intakeSubSystem);
@@ -27,7 +27,6 @@ public class intakeSpin extends CommandBase {
   public void execute() {
     double intakeSpinSpeed = RobotContainer.controller1.getRawAxis(Constants.RIGHT_STICK_X);
       intakeSubSystem.setIntakeSpeed(intakeSpinSpeed);
-
   }
 
   @Override

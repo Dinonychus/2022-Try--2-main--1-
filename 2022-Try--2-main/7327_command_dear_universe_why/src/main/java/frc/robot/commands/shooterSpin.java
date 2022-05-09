@@ -12,8 +12,7 @@ import frc.robot.RobotContainer;
 public class shooterSpin extends CommandBase {
   @SuppressWarnings({"PMD.UnusedPrivateField", "PMD.SingularField"})
   private final shooterSubSystem shooterSubSystem;
-
-
+  
   
   public shooterSpin(shooterSubSystem shooterSubSystem) {
     this.shooterSubSystem = shooterSubSystem;
@@ -27,17 +26,13 @@ public class shooterSpin extends CommandBase {
 
   @Override
   public void execute() {
-
     double spinSpeed = RobotContainer.controller1.getRawAxis(Constants.RIGHT_TRIGGER);
-
-    shooterSubSystem.setSpeed(spinSpeed);
-
+      shooterSubSystem.setSpeed(spinSpeed);
   }
 
   @Override
   public void end(boolean interrupted) {
     shooterSubSystem.setSpeed(0);
-    
   }
 
   @Override

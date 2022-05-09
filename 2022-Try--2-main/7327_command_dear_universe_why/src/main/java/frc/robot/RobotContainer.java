@@ -7,6 +7,7 @@ package frc.robot;
 import edu.wpi.first.wpilibj.XboxController;
 import frc.robot.commands.arcadeDriveCMD;
 import frc.robot.commands.autoMoonwalk;
+import frc.robot.commands.intakeSpin;
 import frc.robot.commands.shooterSpin;
 import frc.robot.subsystems.driveTrain;
 import frc.robot.subsystems.intakeSubSystem;
@@ -34,6 +35,7 @@ public class RobotContainer {
   public RobotContainer() {
     driveTrain.setDefaultCommand(new arcadeDriveCMD(driveTrain));
     shooterSubSystem.setDefaultCommand(new shooterSpin(shooterSubSystem));
+    intakeSubSystem.setDefaultCommand(new intakeSpin(intakeSubSystem));
     configureButtonBindings();
   }
 

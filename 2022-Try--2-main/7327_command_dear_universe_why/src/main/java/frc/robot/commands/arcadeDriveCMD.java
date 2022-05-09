@@ -35,16 +35,12 @@ public class arcadeDriveCMD extends CommandBase {
     double left = moveSpeed + rotateSpeed;
     double right = moveSpeed - rotateSpeed;
 
-
     driveTrain.arcadeDrive(left, right);
-
   }
 
   @Override
   public void end(boolean interrupted) {
     driveTrain.arcadeDrive(0, 0);
-
-
   }
 
   @Override
