@@ -21,13 +21,24 @@ public class shooterSpin extends CommandBase {
   }
 
   @Override
-  public void initialize() {}
+  public void initialize() {
+
+  }
 
   @Override
-  public void execute() {}
+  public void execute() {
+
+    double spinSpeed = RobotContainer.controller1.getRightTriggerAxis();
+
+    shooterSubSystem.setSpeed(spinSpeed);
+
+  }
 
   @Override
-  public void end(boolean interrupted) {}
+  public void end(boolean interrupted) {
+
+    
+  }
 
   @Override
   public boolean isFinished() {

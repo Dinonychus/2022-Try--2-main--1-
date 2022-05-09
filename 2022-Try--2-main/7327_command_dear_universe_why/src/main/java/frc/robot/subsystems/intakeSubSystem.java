@@ -8,7 +8,9 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class intakeSubSystem extends SubsystemBase {
 
-  public intakeSubSystem() {}
+  public intakeSubSystem() {
+    
+  }
 
   @Override
   public void periodic() {

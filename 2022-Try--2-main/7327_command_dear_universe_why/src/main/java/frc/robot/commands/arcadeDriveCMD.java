@@ -32,7 +32,11 @@ public class arcadeDriveCMD extends CommandBase {
     double moveSpeed = -RobotContainer.controller0.getRawAxis(Math.abs(Constants.LEFT_STICK_Y)*Constants.LEFT_STICK_Y);
     double rotateSpeed = RobotContainer.controller0.getRawAxis(Math.abs(Constants.RIGHT_STICK_X)*Constants.RIGHT_STICK_X);
 
-    driveTrain.arcadeDrive(moveSpeed, rotateSpeed);
+    double left = moveSpeed + rotateSpeed;
+    double right = moveSpeed - rotateSpeed;
+
+
+    driveTrain.arcadeDrive(left, right);
 
   }
 
