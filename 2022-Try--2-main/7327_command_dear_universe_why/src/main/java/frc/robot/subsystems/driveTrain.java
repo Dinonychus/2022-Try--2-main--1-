@@ -4,17 +4,11 @@
 
 package frc.robot.subsystems;
 
-import javax.print.CancelablePrintJob;
-
 import edu.wpi.first.util.sendable.SendableRegistry;
-import edu.wpi.first.wpilibj.XboxController;
 import com.revrobotics.CANSparkMax;
-import com.revrobotics.CANSparkMaxLowLevel;
 import com.revrobotics.CANSparkMaxLowLevel.MotorType;
-import frc.robot.RobotContainer;
 import frc.robot.commands.arcadeDriveCMD;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
-import edu.wpi.first.wpilibj.motorcontrol.MotorController;
 import edu.wpi.first.wpilibj.motorcontrol.MotorControllerGroup;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import frc.robot.Constants;

@@ -4,13 +4,10 @@
 
 package frc.robot;
 
-import edu.wpi.first.wpilibj.GenericHID;
 import edu.wpi.first.wpilibj.XboxController;
-import edu.wpi.first.wpilibj.simulation.XboxControllerSim;
 import frc.robot.commands.arcadeDriveCMD;
 import frc.robot.commands.autoMoonwalk;
 import frc.robot.commands.shooterSpin;
-import frc.robot.subsystems.ExampleSubsystem;
 import frc.robot.subsystems.driveTrain;
 import frc.robot.subsystems.intakeSubSystem;
 import frc.robot.subsystems.shooterSubSystem;
