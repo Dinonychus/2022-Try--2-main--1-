@@ -37,7 +37,6 @@ public final DifferentialDrive drive = new DifferentialDrive(m_Left, m_Right);
   
   public driveTrain() {
     SendableRegistry.add(drive, "drive");
-
     this.setDefaultCommand(new arcadeDriveCMD(this));
   }
 

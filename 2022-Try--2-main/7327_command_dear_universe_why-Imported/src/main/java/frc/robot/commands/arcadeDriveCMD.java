@@ -29,13 +29,10 @@ public class arcadeDriveCMD extends CommandBase {
 
   @Override
   public void execute() {
-    double moveSpeed = -RobotContainer.controller0.getRawAxis(Math.abs(Constants.LEFT_STICK_Y)*Constants.LEFT_STICK_Y);
-    double rotateSpeed = RobotContainer.controller0.getRawAxis(Math.abs(Constants.RIGHT_STICK_X)*Constants.RIGHT_STICK_X);
+    double moveSpeed = -RobotContainer.controller0.getRawAxis(Math.abs(Constants.LEFT_STICK_Y*Constants.LEFT_STICK_Y));
+    double rotateSpeed = RobotContainer.controller0.getRawAxis(Math.abs(Constants.RIGHT_STICK_X));
 
-    double left = moveSpeed + rotateSpeed;
-    double right = moveSpeed - rotateSpeed;
-
-    driveTrain.arcadeDrive(left, right);
+    driveTrain.arcadeDrive(moveSpeed, rotateSpeed);
   }
 
   @Override

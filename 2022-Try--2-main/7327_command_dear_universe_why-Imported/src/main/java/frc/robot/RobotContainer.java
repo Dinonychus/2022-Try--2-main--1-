@@ -26,12 +26,6 @@ public class RobotContainer {
   public final static XboxController controller0 = new XboxController(Constants.driverController_ID);
   public final static  XboxController controller1 = new XboxController(Constants.mechanismController_ID);
 
-  public double GetDriverRawAxis(int axis){
-    return controller0.getRawAxis(axis);
-   
-
-  }
-
   public RobotContainer() {
     driveTrain.setDefaultCommand(new arcadeDriveCMD(driveTrain));
     shooterSubSystem.setDefaultCommand(new shooterSpin(shooterSubSystem));

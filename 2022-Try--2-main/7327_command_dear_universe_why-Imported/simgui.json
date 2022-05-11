@@ -1,0 +1,67 @@
+{
+  "HALProvider": {
+    "Other Devices": {
+      "SPARK MAX [14]": {
+        "header": {
+          "open": true
+        }
+      },
+      "SPARK MAX [1]": {
+        "header": {
+          "open": true
+        }
+      },
+      "SPARK MAX [3]": {
+        "header": {
+          "open": true
+        }
+      },
+      "SPARK MAX [4]": {
+        "header": {
+          "open": true
+        }
+      },
+      "SPARK MAX [7]": {
+        "header": {
+          "open": true
+        }
+      }
+    }
+  },
+  "NTProvider": {
+    "types": {
+      "/FMSInfo": "FMSInfo",
+      "/LiveWindow/Ungrouped/Scheduler": "Scheduler",
+      "/LiveWindow/Ungrouped/drive": "DifferentialDrive",
+      "/LiveWindow/driveTrain": "Subsystem",
+      "/LiveWindow/intakeSubSystem": "Subsystem",
+      "/LiveWindow/shooterSubSystem": "Subsystem"
+    }
+  },
+  "NetworkTables": {
+    "FMSInfo": {
+      "open": true
+    },
+    "LiveWindow": {
+      "Ungrouped": {
+        "Scheduler": {
+          "open": true
+        },
+        "drive": {
+          "open": true
+        },
+        "open": true
+      },
+      "driveTrain": {
+        "open": true
+      },
+      "intakeSubSystem": {
+        "open": true
+      },
+      "open": true,
+      "shooterSubSystem": {
+        "open": true
+      }
+    }
+  }
+}
