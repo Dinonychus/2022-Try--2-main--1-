@@ -26,6 +26,7 @@ public final class Constants {
 
     public static final int mechanismController_ID = 1;
 
+    //Joystick Axis
     public final static int LEFT_STICK_X = 0;
     public final static int LEFT_STICK_Y = 1;
     public final static int LEFT_TRIGGER = 2;
